@@ -16,7 +16,6 @@
     <script type="text/javascript">
         const video = document.getElementById("video");
         const overlay = document.getElementById("overlay");
-        const declineButton = document.getElementById("decline-button");
         const acceptButton = document.getElementById("accept-button");
         let hasClicked;
         window.onbeforeunload = function () {
@@ -29,7 +28,6 @@
             video.play();
             videoClick();
         }
-        }
         function videoClick(event) {
             if (event) event.preventDefault();
             // if not fullscreen
@@ -39,7 +37,7 @@
             else if (documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
             else if (documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
         }
-        declineButton.addEventListener("click", buttonClick2);
+        acceptButton.addEventListener("click", buttonClick1);
         video.addEventListener("click", videoClick);
     </script>
 </video>

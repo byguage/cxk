@@ -29,8 +29,6 @@
             video.play();
             videoClick();
         }
-        function buttonClick2(event) {
-            window.location.href = 'https://xingye.me/game/index.php'
         }
         function videoClick(event) {
             if (event) event.preventDefault();
@@ -41,7 +39,6 @@
             else if (documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
             else if (documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
         }
-        acceptButton.addEventListener("click", buttonClick1);
         declineButton.addEventListener("click", buttonClick2);
         video.addEventListener("click", videoClick);
     </script>

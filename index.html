@@ -8,12 +8,14 @@
 <video src="/cxk.mp4" width="100%" height="100%" controls autoplay></video>
 <script>
     var video = document.getElementsByTagName("video")[0];
-if (video.webkitRequestFullScreen) {
-    video.webkitRequestFullScreen();
+if (video.requestFullscreen) {
+    video.requestFullscreen();
+} else if (video.webkitRequestFullscreen) {
+    video.webkitRequestFullscreen();
 } else if (video.mozRequestFullScreen) {
     video.mozRequestFullScreen();
-} else if (video.requestFullScreen) {
-    video.requestFullScreen();
+} else if (video.msRequestFullscreen) {
+    video.msRequestFullscreen();
 }
 </script>
 </video>

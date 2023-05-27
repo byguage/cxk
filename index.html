@@ -1,12 +1,14 @@
 <html data-dpr="1" style="font-size: 80px;">
 <head>
 <meta charset="utf-8">
-<link rel="shortcut icon" href="0.jpg" type="image/x-icon" />
 <meta content="yes" name="apple-mobile-web-app-capable">
 <meta content="yes" name="apple-touch-fullscreen">
 <meta content="telephone=no,email=no" name="format-detection">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<video width="100%" height="100%" controls autoplay>
-<source src="/cxk.mp4" type="video/mp4">
+<video src="/cxk.mp4" width="100%" height="100%" controls autoplay muted></video>
+<script>
+    var video = document.getElementsByTagName("video")[0];
+    video.requestFullscreen();
+</script>
 </video>
 </html>
